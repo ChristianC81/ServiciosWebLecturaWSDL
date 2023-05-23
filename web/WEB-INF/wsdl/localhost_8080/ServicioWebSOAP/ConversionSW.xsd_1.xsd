@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://sw/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sw/">
+
+<xs:element name="euroAdolar" type="tns:euroAdolar"/>
+
+<xs:element name="euroAdolarResponse" type="tns:euroAdolarResponse"/>
+
+<xs:element name="formulaArea" type="tns:formulaArea"/>
+
+<xs:element name="formulaAreaResponse" type="tns:formulaAreaResponse"/>
+
+<xs:element name="formulaEnergiaCinetica" type="tns:formulaEnergiaCinetica"/>
+
+<xs:element name="formulaEnergiaCineticaResponse" type="tns:formulaEnergiaCineticaResponse"/>
+
+<xs:element name="formulaVelocidad" type="tns:formulaVelocidad"/>
+
+<xs:element name="formulaVelocidadResponse" type="tns:formulaVelocidadResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="operacionesBasicas" type="tns:operacionesBasicas"/>
+
+<xs:element name="operacionesBasicasResponse" type="tns:operacionesBasicasResponse"/>
+
+<xs:complexType name="formulaArea">
+<xs:sequence>
+<xs:element name="radio" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="formulaAreaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="formulaEnergiaCinetica">
+<xs:sequence>
+<xs:element name="masa" type="xs:float"/>
+<xs:element name="velocidad" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="formulaEnergiaCineticaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="formulaVelocidad">
+<xs:sequence>
+<xs:element name="distancia" type="xs:float"/>
+<xs:element name="tiempo" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="formulaVelocidadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="clave" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operacionesBasicas">
+<xs:sequence>
+<xs:element name="num1" type="xs:float"/>
+<xs:element name="num2" type="xs:float"/>
+<xs:element name="operacion" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operacionesBasicasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroAdolar">
+<xs:sequence>
+<xs:element name="euros" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroAdolarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
